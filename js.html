@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MeuPortfolio</title>
+    <link rel="stylesheet" href="js.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo"><img src="img/logo2.png">Dabi</a>
+        <ul class="navlist">
+            <li class="liLink"><a href="#home" class="nav-item active">Home</a></li>
+            <li class="liLink"><a href="#flight-list" class="nav-item">Services</a></li>
+            <li class="liLink"><a href="#mission-history" class="nav-item">I am</a></li>
+            <li class="liLink"><a href="#shop" class="nav-item">Projects</a></li>
+            <li class="liLink"><a href="#contact" class="nav-item">Experience</a></li>
+        </ul>
+
+
+        <div class="right-side">
+            <a href="#" class="dabisBtn">Login</a>
+            <div id="menu-icon" class="bx bx-menu"></div>
+        </div>
+        
+    </header>
+
+    <nav class="menu-lateral">
+
+        <div class="btn-expandir">
+            <i class="bi bi-list" id="btn-exp"></i>
+        </div><!--btn-expandir-->
+
+        <ul>
+            <li class="item-menu ativo">
+                <a href="index.html">
+                    <span class="icon"><i class="bi bi-house-door"></i></span>
+                    <span class="txt-link">Home</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="ht.html">
+                    <span class="icon"><i class='bx bxl-html5'></i></span>
+                    <span class="txt-link">Html</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="cs.html">
+                    <span class="icon"><i class='bx bxl-css3'></i></span>
+                    <span class="txt-link">Css</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="js.html">
+                    <span class="icon"><i class='bx bxl-javascript' ></i></span>
+                    <span class="txt-link">JavaScript</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="#">
+                    <span class="icon"><i class="bi bi-person-circle"></i></span>
+                    <span class="txt-link">Conta</span>
+                </a>
+            </li>
+        </ul>
+
+    </nav><!--menu-lateral-->
+        <main class="one">
+        <div class="container">
+            <div class="one-box scroll-top">
+                <h1>O que é JavaScript ?</h1>
+                <p><strong>CSS</strong> 
+                JavaScript é uma linguagem de programação que permite a você implementar itens complexos em páginas web — toda
+                 vez que uma página da web faz mais do que simplesmente mostrar a você informação estática — mostrando conteúdo que se atualiza em um intervalo de tempo, mapas interativos ou gráficos 2D/3D animados, etc.
+                 — você pode apostar que o JavaScript provavelmente está envolvido. É a terceira camada do bolo das tecnologias padrões da web, duas das quais (<strong>HTML e CSS</strong>) nós falamos com muito mais detalhes em outras partes da Área de Aprendizado.
+                </p>
+                <p>
+                    Vamos exemplificar com um simples bloco de texto. Nós podemos marcá-lo usando HTML para dar estrutura e propósito:
+                </p>
+                <pre class="prej">
+                    <p><span><</span>h2<span>></span>Jogador 1: Davi <span><</span>/h2<span>></span></p>
+                </pre>
+                <p>
+                Nós podemos adicionar um pouco de CSS na mistura, para deixar nosso parágrafo um pouco mais atraente:
+                </p>
+                <pre class="prec">
+                    <p>h2 {
+                       <br> font-family: "helvetica neue", helvetica, sans-serif;
+                      <br>  letter-spacing: 1px;
+                      <br>  text-transform: uppercase;
+                       <br> text-align: center;
+                       <br> border: 2px solid rgba(0, 0, 200, 0.6);
+                       <br> background: rgba(0, 0, 200, 0.3);
+                      <br>  color: rgba(0, 0, 200, 0.6);
+                       <br> box-shadow: 1px 1px 2px rgba(0, 0, 200, 0.4);
+                       <br> border-radius: 10px;
+                       <br> padding: 3px 10px;
+                       <br> display: inline-block;
+                       <br> cursor: pointer;
+                     <br> }
+                    </p>
+                </pre>
+                <p>E finalmente, nós podemos adicionar JavaScript para implementar um comportamento dinâmico:</p>
+                <pre class="prel">
+                    <p><br>const para = document.querySelector("h2");
+                        <br>
+                        <br>para.addEventListener("click", atualizarNome);
+                        
+                        <br>function atualizarNome() {
+                        <br>  var nome = prompt("Insira um novo nome");
+                       <br>   para.textContent = "Jogador 1: " + nome;
+                       <br> }</p>
+                </pre>
+                <div class="ati">
+                    <h2>Jogador 1: Davi</h2>
+                </div>
+                <p>Experimente clicar no botão acima para ver o que acontece</p>
+            </div>
+        </div>
+
+
+
+        <div class="container">
+            <div class="one-box scroll-top">
+                <h1>Então o que ele pode realmente fazer?</h1>
+                <p>O núcleo da linguagem JavaScript consiste em alguns benefícios comuns da programação que permite a você fazer coisas como:</p>
+
+                <p><i class='bx bx-check'></i><strong></strong>Armazenar conteúdo útil em variáveis.
+                     No exemplo acima, a propósito, nós pedimos que um novo nome seja inserido e armazenamos o nome em uma variável chamada <code>nome</code></p>
+
+                 <p><i class='bx bx-check'></i><strong></strong> Operações com pedaços de texto (conhecidos como "strings" em programação).
+                     No exemplo acima, nós pegamos a string "Jogador 1: " e concatenamos (juntamos) com a variável <code>nome</code> para criar o texto completo "Jogador 1: Chris".</p>
+
+                 <p><i class='bx bx-check'></i><strong></strong> Executar o código em resposta a determinados eventos que ocorrem em uma página da Web.
+                     Nós usamos o click (en-US) no nosso exemplo acima para que quando clicassem no botão, rodasse o código que atualiza o texto.</p>
+
+                 <p><i class='bx bx-check'></i><strong></strong> E muito mais!</p>
+            </div>
+        </div>
+        </main>
+
+
+    <script src="js/ht.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

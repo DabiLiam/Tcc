@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MeuPortfolio</title>
+    <link rel="stylesheet" href="cs.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo"><img src="img/logo2.png">Dabi</a>
+        <ul class="navlist">
+            <li class="liLink"><a href="#home" class="nav-item active">Home</a></li>
+            <li class="liLink"><a href="#flight-list" class="nav-item">Services</a></li>
+            <li class="liLink"><a href="#mission-history" class="nav-item">I am</a></li>
+            <li class="liLink"><a href="#shop" class="nav-item">Projects</a></li>
+            <li class="liLink"><a href="#contact" class="nav-item">Experience</a></li>
+        </ul>
+
+
+        <div class="right-side">
+            <a href="#" class="dabisBtn">Login</a>
+            <div id="menu-icon" class="bx bx-menu"></div>
+        </div>
+        
+    </header>
+
+    <nav class="menu-lateral">
+
+        <div class="btn-expandir">
+            <i class="bi bi-list" id="btn-exp"></i>
+        </div><!--btn-expandir-->
+
+        <ul>
+            <li class="item-menu ativo">
+                <a href="index.html">
+                    <span class="icon"><i class="bi bi-house-door"></i></span>
+                    <span class="txt-link">Home</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="ht.html">
+                    <span class="icon"><i class='bx bxl-html5' ></i></span>
+                    <span class="txt-link">Html</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="cs.html">
+                    <span class="icon"><i class='bx bxl-css3'></i></span>
+                    <span class="txt-link">Css</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="js.html">
+                    <span class="icon"><i class='bx bxl-javascript' ></i></span>
+                    <span class="txt-link">JavaScript</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="#">
+                    <span class="icon"><i class="bi bi-person-circle"></i></span>
+                    <span class="txt-link">Conta</span>
+                </a>
+            </li>
+        </ul>
+
+    </nav><!--menu-lateral-->
+        <main class="one">
+        <div class="container">
+            <div class="one-box scroll-top">
+                <h1>O que é CSS ?</h1>
+                <p><strong>CSS</strong> 
+                (Folhas de Estilo em Cascata) permite a você criar páginas web agradáveis, mas como isso funciona por baixo dos panos? Este artigo explica o que é CSS,
+                com um exemplo de sintaxe simples, e, também, trata alguns conceitos-chaves sobre a linguagem.
+                </p>
+                <p>
+                No módulo <Strong>Introdução ao HTML</Strong> vimos o que é HTML, e como ele é usado para fazer marcação de documentos. Estes documentos serão legíveis em um navegador web. 
+                Títulos serão mais largos do que textos comuns, parágrafos quebram em uma nova linha e tendo espaços entre eles. Links são coloridos e sublinhados para distingui-los do resto do texto.
+                O que você está vendo é o estilo padrão do navegador - vários estilos básicos que o navegador aplica ao HTML, para garantir que ele será legível mesmo se não for explicitamente estilizado
+                pelo autor da página web.
+                </p>
+                <p>
+                No entanto, a web seria um lugar chato se todos os web sites tivessem estilos iguais.
+                Usando CSS você pode controlar exatamente a aparência dos elementos HTML no navegador, apresentando a sua marcação com o design que desejar.   
+                </p>
+            </div>
+        </div>
+
+
+
+        <div class="container">
+            <div class="one-box scroll-top">
+                <h1>Sintaxe CSS</h1>
+                <p>CSS é uma linguagem baseada em regras. — 
+                Você define regras especificando grupos de estilo que devem ser aplicados para elementos particulares ou grupos de elementos na sua página web.
+                 Por exemplo, "Quero que o título principal, na minha página, seja mostrado como um texto grande e de cor vermelha.".</p>
+                </p>
+
+                <pre class="pre">
+                    <p>h3 {
+                    <br> color: red;
+                    <br> font-size: 5em;
+                    <br>}
+                    </p>
+                </pre>
+
+                <p>
+                A regra é aberta com um <strong>selector</strong>. Isso seleciona o elemento HTML que vamos estilizar. Neste caso, estamos estilizando títulos de nível um (<span><</span><span></span>h1<span></span><span>></span> (en-US)).
+                </p>
+                <p>
+                    Temos, então, um conjunto de chaves <code>{ }</code>.
+                     Dentro deles, haverá uma ou mais declarações, que tomam a forma de pares propriedade e valor. Cada par especifica uma propriedade do(s) elemento(s) que estamos selecionando e, em seguida, então um valor que gostaríamos de atribuir à propriedade
+                </p>
+                <p>
+                Antes dos dois pontos, temos a propriedade, e, depois, o valor. CSS <strong>properties</strong> possui diferentes valores permitidos, dependendo de qual propriedade está sendo especificado.
+                 <br>Em nosso exemplo, temos a propriedade <code>color</code>, que pode tomar vários valores para cor (en-US). Também temos a propriedade <code>font-size</code>. Essa propriedade pode ter vários unidades de tamanho (en-US) como um valor.
+                </p>
+                <p>Veja o Resultado abaixo:</p>
+                <h3>H3</h3>
+            </div>
+        </div>
+        </main>
+
+
+    <script src="js/ht.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

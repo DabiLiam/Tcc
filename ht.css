@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    height: 100vh;
+    background-image: url(img/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Menlo,Consolas,Monaco,Liberation Mono,Lucida Console,monospace;;
+}
+
+nav.menu-lateral{
+    width: 80px;
+    height: 91.8%;
+    margin-top: 5rem;
+    background-color: #202020;
+    padding: 40px 0 40px 1%;
+    box-shadow: 3px 0 0 #4c21e6;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .5s;
+}
+
+nav.menu-lateral.expandir{
+    width: 300px;
+}
+
+.btn-expandir{
+    width: 100%;
+    padding-left: 10px;
+}
+
+.btn-expandir , i{
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+ul{
+    height: 100%;
+    list-style-type: none;
+}
+
+ul li.item-menu{
+    transition: .2s;
+}
+
+ul li.ativo{
+    background-color: #4c21e6;
+}
+
+ul li.item-menu:hover{
+    background: #4c21e6;
+}
+
+ul li.item-menu a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 40px;
+}
+
+ul li.item-menu a .txt-link{
+    margin-left: 70px;
+    transition: .5s;
+    opacity: 0;
+}
+
+nav.menu-lateral.expandir .txt-link{
+    margin-left: 40px;
+    opacity: 1;
+}
+
+ul li.item-menu a .icon > i{
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 20px 12%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+a {
+    color: #fafafa;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    font-weight: 600;
+    font-size: 22px;
+    color: #fafafa;
+}
+
+.logo img {
+    max-width: 100%;
+    width: 40px;
+    height: auto;
+}
+
+header .navlist {
+    display: flex;
+}
+
+.navlist li {
+    margin: 0 1.5rem;
+}
+
+.navlist li .nav-item {
+    position: relative;
+    padding: 17px 0;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: all .2s ease;
+}
+
+.navlist li .nav-item:hover {
+    color: #9e3ab6;
+}
+
+.navlist li .nav-item::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 0;
+    height: 1px;
+    background: var(--hover-color);
+    border-radius: 50%;
+    transition: all .3s ease;
+}
+
+.navlist li .nav-item:hover::before {
+    width: 100%;
+}
+
+.navlist li .active {
+    color: #fff;
+    border-bottom: 1px solid var(--hover-color);
+}
+
+.right-side{
+    display: flex;
+    align-items: center;
+}
+
+.dabisBtn {
+    background: linear-gradient(180deg , #2463b7 0, #4c21e6 100%);
+    height: 28px;
+    line-height: 28px;
+    border-radius: 5px;
+    padding: 0 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: all .3s ease;
+    white-space: nowrap;
+    display: inline-block;
+    color: #ffffff;
+}
+
+.dabisBtn:hover {
+    background: linear-gradient(180deg , #184a8f 0, #7595e0 100%);
+    box-shadow: 0 3px 9px #2559b9;
+}
+
+#menu-icon {
+    color: var(--hover-color);
+    font-size: 2.5rem;
+    display: none;
+}
+
+
+
+
+.one {
+   display: flow-root;
+   min-height: 80vh;
+}
+
+.one .container {
+    margin-top: 10rem;
+    margin-left: 30rem;
+}
+
+.one h1 {
+    margin-bottom: 2rem;
+    display: block;
+}
+
+.container .one-box {
+    width: 70%;
+    padding: 2rem 1.5rem 2rem;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    color: #fff;
+    z-index: 2;
+    margin: 2rem 2.5rem;
+}
+
+
+.one-box  {
+    color: #dddcdc;
+    margin: 1rem 0 2rem;
+    line-height: 2.1rem;
+    font-size: 1.2rem;
+    display: block;
+    margin-block-start: 2em;
+    margin-block-end: 0px;
+    margin-inline-end: 0px;
+    font-weight: 500;
+    border-top: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    margin-top: 0;
+    background: linear-gradient(300deg, #e44d26 0, #333 100%);
+    border: 1px solid transparent;
+    box-shadow: 3px 2px #333;
+    margin: 1rem 0 2rem;
+}
+
+.pre p {
+    padding: 10px;
+    background-color: #474747;
+    text-align: center;
+    line-height: 1rem;
+    border-radius: 1.2%;
+}
+
+.one-box img {
+    margin: 20px;
+    position: relative;
+}

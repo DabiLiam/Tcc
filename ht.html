@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MeuPortfolio</title>
+    <link rel="stylesheet" href="ht.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo"><img src="img/logo2.png">Dabi</a>
+        <ul class="navlist">
+            <li class="liLink"><a href="#home" class="nav-item active">Home</a></li>
+            <li class="liLink"><a href="#flight-list" class="nav-item">Services</a></li>
+            <li class="liLink"><a href="#mission-history" class="nav-item">I am</a></li>
+            <li class="liLink"><a href="#shop" class="nav-item">Projects</a></li>
+            <li class="liLink"><a href="#contact" class="nav-item">Experience</a></li>
+        </ul>
+
+        
+
+        <div class="right-side">
+            <a href="#" class="dabisBtn">Login</a>
+            <div id="menu-icon" class="bx bx-menu"></div>
+        </div>
+        
+    </header>
+
+    <nav class="menu-lateral">
+
+        <div class="btn-expandir">
+            <i class="bi bi-list" id="btn-exp"></i>
+        </div><!--btn-expandir-->
+
+        <ul>
+            <li class="item-menu ativo">
+                <a href="#">
+                    <span class="icon"><i class="bi bi-house-door"></i></span>
+                    <span class="txt-link">Home</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="#">
+                    <span class="icon"><i class='bx bxl-html5'></i></span>
+                    <span class="txt-link">Html</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="cs.html">
+                    <span class="icon"><i class='bx bxl-css3'></i></span>
+                    <span class="txt-link">Css</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="js.html">
+                    <span class="icon"><i class='bx bxl-javascript' ></i></span>
+                    <span class="txt-link">JavaScript</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="#">
+                    <span class="icon"><i class="bi bi-person-circle"></i></span>
+                    <span class="txt-link">Conta</span>
+                </a>
+            </li>
+        </ul>
+
+    </nav><!--menu-lateral-->
+        <main class="one">
+        <div class="container">
+            <div class="one-box scroll-top">
+                <h1>O que é HTML ?</h1>
+                <p><strong>HTML</strong> 
+                (HyperText Markup Language) não é uma linguagem de programação, é uma linguagem de marcação utilizada para dizer ao seu navegador como estruturar a página web que você visita. A página pode ser tanto complicada como simples 
+                 quanto o desenvolvedor web desejar que seja. HTML consiste em uma série de <strong>elementos</strong> que você usa para anexar, envolver ou marcar diferentes partes do conteúdo para que apareça ou aja de uma certa maneira.
+                 O fechamento das <strong>tags</strong> pode transformar uma parte do conteúdo dentro do elemento em um link para direcionar à uma outra página web, colocar as palavras em itálico, e assim por diante. Por exemplo, observe o conteúdo a seguir:
+                </p>
+                <pre class="pre">
+                    <p>Meu gato é muito mal-humorado.</p>
+                </pre>
+                <p>
+                    Se nós quisermos que a linha permaneça, nós podemos especificar que é um parágrafo, fechando-a com a elemento de parágrafo <span>( <</span>p<span>> )</span>:
+                </p>
+                <pre class="pre">
+                   <p><span><</span>p<span>></span> Meu gato é muito mal-humorado <span><</span>p<span>></span></p>
+                </pre>
+            </div>
+        </div>
+
+
+
+        <div class="container">
+            <div class="one-box scroll-top">
+                <h1>Anatomia de um elemento HTML</h1>
+                <p>Vamos explorar nosso elemento parágrafo um pouco mais:</p>
+                <img src="img/anato.png" alt="">
+                <p>As partes principais do elemento são:</p>
+
+                <p>1.<strong>Tag de abertura:</strong> Consiste no nome do elemento (neste caso: p), envolvido entre <strong>parênteses angulares</strong> de abertura e fechamento.
+                 Isso indica onde o elemento começa, ou inicia a produzie efeito- neste caso, onde o parágrafo se inicia.</p>
+
+                 <p>2.<strong>Tag de fechamento:</strong> É o mesmo que a tag de abertura, exceto que este inclui uma barra diagonal antes do nome do elemento.
+                 Indica onde o elemento termina - neste caso, onde fica o fim do parágrafo. Falhar em incluir o fechamento de uma tag é um erro comum para iniciantes e pode levar a resultado estranhos.</p>
+
+                 <p>3.<strong> O conteúdo:</strong> Este é o conteúdo do elemento, que neste caso é somente o texto "My cat is very grumpy"</p>
+
+                 <p>4.<strong> O elemento:</strong> A tag de abertura, mais a tag de fechamento, mais o conteúdo, é igual ao elemento.</p>
+            </div>
+        </div>
+        </main>
+
+
+    <script src="js/ht.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
